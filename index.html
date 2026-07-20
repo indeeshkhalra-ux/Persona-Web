@@ -1,762 +1,2421 @@
+<!--==================================================
+    Mission Guntaas 13
+    H1-A
+    Basic Setup + Loader + Navbar
+==================================================-->
+
 <!DOCTYPE html>
+
 <html lang="en">
+
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Personal Project | Guntaas Singh</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-<link rel="stylesheet" href="style.css">
+
+
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+
+    <title>
+        Mission Guntaas 13 🎂🚀
+    </title>
+
+
+    <!--=========================================
+        Bootstrap 5.3.3
+    =========================================-->
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+
+    <!--=========================================
+        Bootstrap Icons
+    =========================================-->
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+
+
+    <!--=========================================
+        Main Style Sheet
+    =========================================-->
+
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
+
+
 <body>
 
-  <div class="galaxy-background">
 
-    <div class="nebula nebula-1"></div>
-    <div class="nebula nebula-2"></div>
-    <div class="nebula nebula-3"></div>
+<!--==================================================
+    Loading Screen
+==================================================-->
 
-</div>
+<div id="loading-screen">
 
-<div class="cursor-container">
-  <div class="cursor-ring"></div>
 
-  <div class="cursor-glow"></div>
+    <div class="loader-circle"></div>
 
-  <div class="orbit-star star1"></div>
-  <div class="orbit-star star2"></div>
-  <div class="orbit-star star3"></div>
-  <div class="orbit-star star4"></div>
-</div>
 
-<div class="space-bg">
+    <div class="loader-text">
 
-  <div class="parallax layer-1"></div>
-  <div class="parallax layer-2"></div>
-  <div class="parallax layer-3"></div>
-  <div class="parallax layer-4"></div>
-  <div class="parallax layer-5"></div>
-  <div class="parallax layer-6"></div>
+        MISSION GUNTAAS 13
 
-  <!-- Glowing Planet -->
-  <div class="planet planet-1"></div>
+    </div>
 
-  <!-- Small Planet -->
-  <div class="planet planet-2"></div>
-
-  <!-- Moon -->
-  <div class="planet planet-3"></div>
-
-  <!-- Orbit Rings -->
-  <div class="orbit orbit-1"></div>
-  <div class="orbit orbit-2"></div>
-
-  <!-- Shooting Stars -->
-  <div class="shooting-stars">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
 
 </div>
 
-<ul class="navbar-nav ms-auto nav-indicator">
 
-<li class="nav-item">
-<a class="nav-link active" href="#about">About</a>
-</li>
 
-<li class="nav-item">
-<a class="nav-link" href="#hobbies">Hobbies</a>
-</li>
 
-<li class="nav-item">
-<a class="nav-link" href="#goals">Goals</a>
-</li>
+<!--==================================================
+    Custom Cursor
+==================================================-->
 
-<li class="nav-item">
-<a class="nav-link" href="#journey">Journey</a>
-</li>
+<div class="cursor-dot"></div>
 
-<li class="nav-item">
-<a class="nav-link" href="#contact">Contact</a>
-</li>
+<div class="cursor-ring"></div>
 
-</ul>
 
-<header class="hero-section">
-<div class="container">
-<div class="row align-items-center min-vh-100">
-<div class="col-lg-7">
-<span class="badge bg-primary rounded-pill px-3 py-2"><i class="bi bi-stars"></i> Future Astrophysicist</span>
-<h1 class="display-2 fw-bold mt-4">Hi, I'm <span class="typing-text">Guntaas Singh</span></h1>
-<p class="lead">Class 7 Student • Coding • Guitar • Drawing</p>
-<p>Welcome to my personal project. My dream is to become an <abbr title="A scientist who studies the universe using physics.">Astrophysicist</abbr> or a Space Scientist. I enjoy learning coding to create useful websites and software that may help scientific research in the future.</p>
-<a class="btn btn-info btn-lg rounded-pill" href="#about">Explore My Journey</a>
-</div>
 
-<div class="col-lg-5">
-<div class="hero-card">
-<div class="icon-grid">
 
-<div class="icon-card supernova nasa">
-<i class="bi bi-moon-stars-fill"></i>
-</div>
+<!--==================================================
+    Navigation Bar
+==================================================-->
 
-<div class="icon-card supernova coding">
-<i class="bi bi-code-slash"></i>
-</div>
+<header class="glass-nav">
 
-<div class="icon-card supernova music">
-<i class="bi bi-music-note-beamed"></i>
-</div>
 
-<div class="icon-card supernova rocket">
-<i class="bi bi-rocket-fill"></i>
-</div>
+    <div class="container">
 
-<div class="icon-card supernova cpu">
-<i class="bi bi-cpu-fill"></i>
-</div>
 
-<div class="icon-card supernova laptop">
-<i class="bi bi-laptop"></i>
-</div>
+        <nav class="navbar">
 
-</div>
-<h3>Dream • Code • Explore</h3>
-<p>NASA Inspired • Coding Inspired • Music Inspired</p>
-</div>
-</div>
-</div>
-</div>
+
+            <!-- Brand Logo -->
+
+            <a href="#" class="logo">
+
+                🎂 Mission
+
+                <span>
+                    Guntaas 13
+                </span>
+
+            </a>
+
+
+
+            <!-- Menu Links -->
+
+            <ul class="nav-links">
+
+
+                <li>
+
+                    <a href="#home">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#games">
+                        Games
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#mission">
+                        Mission
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#party">
+                        Party
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+
+        </nav>
+
+
+    </div>
+
+
 </header>
 
-<section id="about" class="container py-5 advanced-about">
-
-<div class="row align-items-center g-5">
-
-
-<!-- Profile Card -->
-
-<div class="col-lg-5">
-
-<div class="about-profile glass-card">
-
-
-<div class="profile-orbit">
-
-<div class="profile-core">
-<i class="bi bi-person-space"></i>
-</div>
-
-</div>
-
-
-<h2>
-Guntaas Singh
-</h2>
-
-
-<p class="about-role">
-Future Astrophysicist • Developer • Creator
-</p>
-
-
-<div class="about-tags">
-
-<span>
-<i class="bi bi-stars"></i>
-Space
-</span>
-
-<span>
-<i class="bi bi-code-slash"></i>
-Coding
-</span>
-
-<span>
-<i class="bi bi-music-note"></i>
-Music
-</span>
-
-</div>
-
-
-</div>
-
-</div>
 
 
 
-<!-- Information -->
-<div class="col-lg-7">
-<div class="glass-card about-content">
-<h2>
-About My Mission
-</h2>
-<p>
-Hello! I'm <strong>Guntaas Singh</strong>.
-I created this website to combine my passion for space,
-technology, coding, and creativity.
-My dream is to become an Astrophysicist or Space Scientist
-and create technology that helps explore the universe.
-</p>
-<div class="mission-stats">
 
-<div class="stat-box">
-<i class="bi bi-rocket-takeoff"></i>
-<h3>
-Space
-</h3>
-<p>
-Exploring the universe
-</p>
-</div>
-<div class="stat-box">
-<i class="bi bi-laptop"></i>
-<h3>
-Coding
-</h3>
-<p>
-Building digital projects
-</p>
-</div>
-<div class="stat-box">
-<i class="bi bi-lightbulb"></i>
-<h3>
-Learning
-</h3>
-<p>
-Improving every day
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="hobbies" class="container py-5">
-<div class="row g-4">
-<div class="col-md-4"><div class="glass-card p-4 text-center"><i class="bi bi-code-slash display-4"></i><h3>Coding</h3></div></div>
-<div class="col-md-4"><div class="glass-card p-4 text-center"><i class="bi bi-music-note-beamed display-4"></i><h3>Playing Guitar</h3></div></div>
-<div class="col-md-4"><div class="glass-card p-4 text-center"><i class="bi bi-palette-fill display-4"></i><h3>Drawing</h3></div></div>
+<!--==================================================
+    Hero Section
+    Continue In H1-B
+==================================================-->
+<!--==================================================
+    Mission Guntaas 13
+    H1-B
+    Hero Mission Landing Section
+==================================================-->
 
-<div class="equalizer">
 
-    <span class="eq-bar"></span>
-    <span class="eq-bar"></span>
-    <span class="eq-bar"></span>
-    <span class="eq-bar"></span>
-    <span class="eq-bar"></span>
-    <span class="eq-bar"></span>
-    <span class="eq-bar"></span>
-    <span class="eq-bar"></span>
-    <span class="eq-bar"></span>
-    <span class="eq-bar"></span>
+<section class="hero" id="home">
 
-</div>
 
-<center>
-<!-- ===== Live Terminal ===== -->
-<div class="terminal-box">
-    <div class="terminal-header">
-        <span class="red"></span>
-        <span class="yellow"></span>
-        <span class="green"></span>
+    <!-- Floating Background Orbs -->
+
+    <div class="orb orange"></div>
+
+    <div class="orb blue"></div>
+
+    <div class="orb green"></div>
+
+    <div class="orb purple"></div>
+
+
+
+
+    <div class="container">
+
+
+        <div class="hero-content">
+
+
+
+            <!-- Mission Tag -->
+
+            <div class="hero-tag">
+
+                🎯 SECRET BIRTHDAY MISSION ACTIVATED
+
+            </div>
+
+
+
+
+            <!-- Main Heading -->
+
+            <h1>
+
+                Welcome To
+
+                <span>
+                    Mission Guntaas 13
+                </span>
+
+            </h1>
+
+
+
+
+            <!-- Description -->
+
+            <p>
+
+                A special birthday adventure filled with
+                treasure hunts, secret missions, games,
+                celebrations and unforgettable memories.
+
+            </p>
+
+
+
+
+            <!-- Buttons -->
+
+            <div class="hero-buttons">
+
+
+                <a href="#games"
+                   class="btn btn-primary">
+
+                    <i class="bi bi-controller"></i>
+
+                    Start Mission
+
+                </a>
+
+
+
+                <a href="#mission"
+                   class="btn btn-secondary">
+
+                    <i class="bi bi-map"></i>
+
+                    Mission Map
+
+                </a>
+
+
+            </div>
+
+
+
+
+
+            <!-- Mission Information Card -->
+
+            <div class="hero-card">
+
+
+                <h3 class="text-white">
+
+                    🎂 Birthday Mission Details
+
+                </h3>
+
+
+
+                <div class="hero-info">
+
+
+
+                    <div class="info-box">
+
+                        <i class="bi bi-person-fill"></i>
+
+                        <h3>
+
+                            Commander
+
+                        </h3>
+
+                        <p>
+
+                            Guntaas Singh
+
+                        </p>
+
+                    </div>
+
+
+
+
+
+                    <div class="info-box">
+
+                        <i class="bi bi-calendar-event"></i>
+
+                        <h3>
+
+                            Date
+
+                        </h3>
+
+                        <p>
+
+                            23 July
+
+                        </p>
+
+                    </div>
+
+
+
+
+
+                    <div class="info-box">
+
+                        <i class="bi bi-clock-fill"></i>
+
+                        <h3>
+
+                            Time
+
+                        </h3>
+
+                        <p>
+
+                            5:00 PM - 8:00 PM
+
+                        </p>
+
+                    </div>
+
+
+
+
+
+                    <div class="info-box">
+
+                        <i class="bi bi-stars"></i>
+
+                        <h3>
+
+                            Age
+
+                        </h3>
+
+                        <p>
+
+                            13 Years
+
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
     </div>
 
-    <div class="terminal-output"></div>
-</div>
-</center>
-</div>
-</section>
-
-<section class="planet-system">
-
-  <div class="sun">
-</div>
-
-<div class="asteroid-belt"></div>
-
-<div class="orbit orbit-1">
-
-    <div class="planet mercury"
-    data-planet="Mercury"
-    data-temp="-173°C to 427°C"
-    data-distance="57.9 million km"
-    data-atmosphere="Very thin atmosphere">
-    </div>
-
-</div>
-
-<div class="orbit orbit-2">
-
-    <div class="planet venus"
-    data-planet="Venus"
-    data-temp="462°C"
-    data-distance="108.2 million km"
-    data-atmosphere="Carbon dioxide">
-    </div>
-
-</div>
-
-<div class="orbit orbit-3">
-
-    <div class="planet earth"
-    data-planet="Earth"
-    data-temp="15°C average"
-    data-distance="149.6 million km"
-    data-atmosphere="Nitrogen + Oxygen">
-
-        <div class="moon"></div>
-
-    </div>
-
-</div>
-
-
-<div class="orbit orbit-4">
-
-    <div class="planet mars"
-    data-planet="Mars"
-    data-temp="-63°C average"
-    data-distance="227.9 million km"
-    data-atmosphere="Carbon dioxide">
-    </div>
-
-</div>
-
-
-<div class="orbit orbit-5">
-
-    <div class="planet jupiter"
-    data-planet="Jupiter"
-    data-temp="-110°C"
-    data-distance="778.5 million km"
-    data-atmosphere="Hydrogen + Helium">
-    </div>
-
-</div>
-
-
-<div class="orbit orbit-6">
-
-    <div class="planet saturn"
-    data-planet="Saturn"
-    data-temp="-140°C"
-    data-distance="1.43 billion km"
-    data-atmosphere="Hydrogen + Helium">
-    </div>
-
-</div>
-
-
-<div class="orbit orbit-7">
-
-    <div class="planet uranus"
-    data-planet="Uranus"
-    data-temp="-195°C"
-    data-distance="2.87 billion km"
-    data-atmosphere="Hydrogen + Methane">
-    </div>
-
-</div>
-
-
-<div class="orbit orbit-8">
-
-    <div class="planet neptune"
-    data-planet="Neptune"
-    data-temp="-200°C"
-    data-distance="4.5 billion km"
-    data-atmosphere="Hydrogen + Methane">
-    </div>
-
-</div>
-
-<div class="space-controls">
-
-    <button id="zoomIn">+</button>
-
-    <button id="zoomOut">−</button>
-
-    <button id="resetView">RESET</button>
-
-</div>
-    <div class="planet-info">
-        <h3 id="planetName">
-            Select Planet
-        </h3>
-
-        <p id="planetData">
-            Hover over a planet
-        </p>
-    </div>
 
 </section>
 
 
-<section id="goals" class="container py-5">
-<div class="glass-card p-4">
-<h2>My Goals</h2>
-<ul>
-<li>Become an Astrophysicist or Space Scientist.</li>
-<li>Improve my coding skills.</li>
-<li>Create useful websites and software.</li>
-<li>Keep learning every day.</li>
-</ul>
-</div>
+
+
+
+<!--==================================================
+    H1 Completed
+    Continue In H2-A
+==================================================-->
+<!--==================================================
+    Mission Guntaas 13
+    H2-A
+    Game Mission Cards Section
+==================================================-->
+
+
+<section class="games-section" id="games">
+
+
+    <div class="container">
+
+
+
+        <!-- Section Title -->
+
+        <div class="section-title">
+
+
+            <h2>
+
+                Mission
+
+                <span>
+                    Games
+                </span>
+
+            </h2>
+
+
+            <p>
+
+                Complete exciting birthday missions,
+                solve challenges and unlock the final
+                treasure relic.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+
+        <!-- Game Grid -->
+
+        <div class="games-grid">
+
+
+
+
+
+            <!-- Treasure Hunt -->
+
+            <div class="game-card floating-card active-glow">
+
+
+                <div class="game-icon">
+
+                    <i class="bi bi-map-fill"></i>
+
+                </div>
+
+
+
+                <div class="game-badge">
+
+                    <i class="bi bi-stars"></i>
+
+                    Main Mission
+
+                </div>
+
+
+
+
+                <h3>
+
+                    Quest For The Lost Relic
+
+                </h3>
+
+
+
+
+                <p>
+
+                    Search hidden clues, solve riddles
+                    and discover the secret treasure box
+                    hidden in the birthday mission area.
+
+                </p>
+
+
+
+
+                <a href="#treasure"
+                   class="game-btn">
+
+                    Begin Hunt
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Puzzle Mission -->
+
+            <div class="game-card">
+
+
+
+                <div class="game-icon">
+
+                    <i class="bi bi-puzzle-fill"></i>
+
+                </div>
+
+
+
+                <div class="game-badge">
+
+                    <i class="bi bi-lightbulb-fill"></i>
+
+                    Challenge
+
+                </div>
+
+
+
+
+                <h3>
+
+                    Mystery Puzzle Lab
+
+                </h3>
+
+
+
+
+                <p>
+
+                    Use teamwork and creativity to
+                    solve puzzles and unlock secret
+                    mission rewards.
+
+                </p>
+
+
+
+
+                <a href="#mission"
+                   class="game-btn">
+
+                    Solve Puzzle
+
+                    <i class="bi bi-key-fill"></i>
+
+                </a>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Team Challenge -->
+
+            <div class="game-card">
+
+
+
+                <div class="game-icon">
+
+                    <i class="bi bi-people-fill"></i>
+
+                </div>
+
+
+
+
+                <div class="game-badge">
+
+                    <i class="bi bi-trophy-fill"></i>
+
+                    Team Battle
+
+                </div>
+
+
+
+
+                <h3>
+
+                    Commander Challenge
+
+                </h3>
+
+
+
+
+                <p>
+
+                    Work together, compete with
+                    other teams and complete fun
+                    birthday challenges.
+
+                </p>
+
+
+
+
+                <a href="#party"
+                   class="game-btn">
+
+                    Join Team
+
+                    <i class="bi bi-rocket-fill"></i>
+
+                </a>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
 </section>
 
-<section id="journey" class="container py-5 journey-section">
 
-<h2 class="text-center mb-5">
-<i class="bi bi-rocket-takeoff"></i>
-My Journey
-</h2>
 
+
+
+<!--==================================================
+    Continue In H2-B
+==================================================-->
+<!--==================================================
+    Mission Guntaas 13
+    H2-B
+    Treasure Hunt Mission System
+==================================================-->
+
+
+<section class="treasure-section" id="treasure">
+
+
+    <div class="container">
+
+
+
+        <!-- Treasure Header -->
+
+        <div class="treasure-header">
+
+
+            <h2>
+
+                Quest For The
+
+                <span>
+                    The Quest of The Lost Relic
+                </span>
+
+            </h2>
+
+
+
+            <p>
+
+                Teams solve clues to find map coordinates 
+                and race to a hidden treasure box.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+
+        <!-- Treasure Map -->
+
+        <div class="treasure-map">
+
+
+
+            <div class="map-grid">
+
+
+
+                <div class="map-cell">
+
+                    A1
+
+                </div>
+
+
+                <div class="map-cell">
+
+                    A2
+
+                </div>
+
+
+                <div class="map-cell">
+
+                    A3
+
+                </div>
+
+
+                <div class="map-cell">
+
+                    A4
+
+                </div>
+
+
+                <div class="map-cell">
+
+                    A5
+
+                </div>
+
+
+
+
+                <div class="map-cell">
+
+                    B1
+
+                </div>
+
+
+                <div class="map-cell">
+
+                    B2
+
+                </div>
+
+
+                <div class="map-cell found">
+
+                    B3
+
+                </div>
+
+
+                <div class="map-cell">
+
+                    B4
+
+                </div>
+
+
+                <div class="map-cell">
+
+                    B5
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Treasure Capsules -->
+
+        <div class="capsule-section">
+
+
+
+            <div class="capsule-grid">
+
+
+
+
+
+                <div class="capsule-card locked">
+
+
+                    <div class="capsule-icon">
+
+                        <i class="bi bi-capsule"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Clue Capsule 01
+
+                    </h3>
+
+
+                    <p>
+
+                        Find the first hidden clue
+                        to start the mission.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+                <div class="capsule-card locked">
+
+
+                    <div class="capsule-icon">
+
+                        <i class="bi bi-capsule"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Clue Capsule 02
+
+                    </h3>
+
+
+                    <p>
+
+                        Solve the riddle and
+                        discover the next location.
+
+                    </p>
+
+
+                </div>
+
+
+
+
+
+
+                <div class="capsule-card unlocked">
+
+
+                    <div class="capsule-icon">
+
+                        <i class="bi bi-unlock-fill"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Final Coordinates
+
+                    </h3>
+
+
+                    <p>
+
+                        The secret location of
+                        the lost relic.
+
+                    </p>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Final Treasure Box -->
+
+        <div class="treasure-box">
+
+
+            <i class="bi bi-treasure-fill"></i>
+
+
+
+            <h3>
+
+                Hidden Relic Awaiting
+
+            </h3>
+
+
+
+            <p>
+
+                Complete all missions to unlock
+                the final birthday treasure.
+
+            </p>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!--==================================================
+    Continue In H3-A
+==================================================-->
+<!--==================================================
+    Mission Guntaas 13
+    H3-A
+    Mission Timeline + Birthday Schedule
+==================================================-->
+
+
+<section class="timeline" id="mission">
+
+
+    <div class="container">
+
+
+
+        <!-- Section Title -->
+
+        <div class="section-title">
+
+
+            <h2>
+
+                Mission
+
+                <span>
+                    Timeline
+                </span>
+
+            </h2>
+
+
+            <p>
+
+                Follow the birthday mission schedule
+                and complete every adventure stage.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+
+<!-- Timeline -->
 
 <div class="timeline">
 
+    <div class="timeline-item left">
 
-<div class="timeline-item">
+        <div class="timeline-dot"></div>
 
-<div class="timeline-dot">
-<i class="bi bi-pc-display"></i>
+        <div class="timeline-card">
+
+            <div class="timeline-time">04:00 PM</div>
+
+            <h3>Mission Begins! 🚀</h3>
+
+            <p>
+                Commander arrival, team formation,
+                mission briefing, team names,
+                and mission instructions.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item right">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">04:30 PM</div>
+
+            <h3>Cyber Chase</h3>
+
+            <p>
+                A tag game where runners collect
+                hidden shield tokens while tagged
+                players join the hunters.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item left">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">04:45 PM</div>
+
+            <h3>Uno-Musical Time!</h3>
+
+            <p>
+                Playing Three Versions Of Uno that are
+                uno show em no mercy, Uno classic and 
+                uno Liars
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item right">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">05:15 PM</div>
+
+            <h3>Mad Scientist's Lab</h3>
+
+            <p>
+                Complete scientific puzzles,
+                observation challenges and logic
+                experiments to continue the mission.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item left">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">05:30 PM</div>
+
+            <h3>Birthday Celebration 🎂</h3>
+
+            <p>
+                Cake cutting, birthday song,
+                gifts, photographs and
+                refreshments.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item right">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">05:45 PM</div>
+
+            <h3>Blindfold Maze</h3>
+
+            <p>
+                A blindfolded player must reach
+                the finish using only their
+                teammate's voice while opponents
+                shout fake directions.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item left">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">06:00 PM</div>
+
+            <h3>Sonic Beats</h3>
+
+            <p>
+                Musical chairs using floor mats
+                instead of chairs for a safer
+                and faster challenge.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item right">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">06:15 PM</div>
+
+            <h3>Volcanic Core Fuse</h3>
+
+            <p>
+                Pass the volcanic core before
+                the music stops while surprise
+                commands instantly change
+                the passing direction.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item left">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">06:30 PM</div>
+
+            <h3>Lava Floor Escape</h3>
+
+            <p>
+                Teams cross the room using only
+                cardboard lava stones without
+                touching the floor.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item right">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">06:45 PM</div>
+
+            <h3>Quest for the Lost Relic</h3>
+
+            <p>
+                Teams solve riddles to reveal
+                map coordinates and race to
+                recover the hidden relic.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item left">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">07:15 PM</div>
+
+            <h3>Crystal Rolling</h3>
+
+            <p>
+                Guide a crystal through a
+                winding track without touching
+                it by hand. The fastest team
+                to reach the finish wins.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item right">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">07:30 PM</div>
+
+            <h3>Mega Code Breaker</h3>
+
+            <p>
+                One final race to crack the
+                mission code and complete
+                the last challenge before
+                the closing ceremony.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="timeline-item left">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-card">
+
+            <div class="timeline-time">08:00 PM</div>
+
+            <h3>Mission Awards & Closing Ceremony 🏆</h3>
+
+            <p>
+                Winners announced, prizes,
+                certificates, group photographs
+                and the official end of
+                Mission Guntaas 13.
+            </p>
+
+        </div>
+
+    </div>
+
 </div>
+</div>      <!-- closes .container -->
 
-<div class="timeline-card glass-card">
+</section>  <!-- closes section.timeline -->
 
-<h3>Started Exploring Computers</h3>
-
-<p>
-My journey began with curiosity about computers,
-technology, and how software works.
-</p>
-
-</div>
-
-</div>
-
+<!--==================================================
+    Continue In H3-B
+==================================================-->
+<!--==================================================
+    Mission Guntaas 13
+    H3-B
+    Commander Section + Mission Control Panel
+==================================================-->
 
 
-<div class="timeline-item">
+<section class="commander" id="commander">
 
-<div class="timeline-dot">
-<i class="bi bi-code-slash"></i>
-</div>
 
-<div class="timeline-card glass-card">
-
-<h3>Learning Web Development</h3>
-
-<p>
-I started learning HTML, CSS, Bootstrap,
-and creating my own websites.
-</p>
-
-</div>
-
-</div>
+    <div class="container">
 
 
 
-<div class="timeline-item">
-
-<div class="timeline-dot">
-<i class="bi bi-stars"></i>
-</div>
-
-<div class="timeline-card glass-card">
-
-<h3>Space & Science Dream</h3>
-
-<p>
-My goal is to become an Astrophysicist
-or Space Scientist and explore the universe.
-</p>
-
-</div>
-
-</div>
+        <div class="commander-grid">
 
 
 
-<div class="timeline-item">
-
-<div class="timeline-dot">
-<i class="bi bi-rocket"></i>
-</div>
-
-<div class="timeline-card glass-card">
-
-<h3>Future Mission</h3>
-
-<p>
-Create technology, software, and projects
-that combine science and creativity.
-</p>
-
-</div>
-
-</div>
 
 
-</div>
+            <!-- Commander Information -->
+
+            <div class="commander-card">
+
+
+                <h2>
+
+                    Meet The
+
+                    <span>
+                        Commander
+                    </span>
+
+                </h2>
+
+
+
+                <p>
+
+                    Welcome to Mission Guntaas 13.
+                    This special operation is created
+                    for an unforgettable birthday
+                    adventure.
+
+                </p>
+
+
+
+                <p>
+
+                    Prepare for games, challenges,
+                    treasure hunting and celebration
+                    missions.
+
+                </p>
+
+
+
+
+
+                <!-- Statistics -->
+
+                <div class="stats">
+
+
+
+                    <div class="stat-box">
+
+                        <h3>
+
+                            13
+
+                        </h3>
+
+                        <p>
+
+                            Years
+
+                        </p>
+
+                    </div>
+
+
+
+
+                    <div class="stat-box">
+
+                        <h3>
+
+                            5+
+
+                        </h3>
+
+                        <p>
+
+                            Missions
+
+                        </p>
+
+                    </div>
+
+
+
+
+                    <div class="stat-box">
+
+                        <h3>
+
+                            ∞
+
+                        </h3>
+
+                        <p>
+
+                            Memories
+
+                        </p>
+
+                    </div>
+
+
+
+
+                    <div class="stat-box">
+
+                        <h3>
+
+                            1
+
+                        </h3>
+
+                        <p>
+
+                            Commander
+
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Mission Control -->
+
+            <div class="commander-card">
+
+
+                <div class="control-panel">
+
+
+
+                    <div class="control-header">
+
+
+                        <h2>
+
+                            Mission
+
+                            <span>
+                                Control
+                            </span>
+
+                        </h2>
+
+
+                        <p>
+
+                            System status and birthday
+                            mission progress.
+
+                        </p>
+
+
+                    </div>
+
+
+
+
+
+
+                    <div class="control-grid">
+
+
+
+
+
+                        <div class="control-box">
+
+
+                            <i class="bi bi-controller"></i>
+
+
+                            <h3>
+
+                                Games
+
+                            </h3>
+
+
+                            <p>
+
+                                Active
+
+                            </p>
+
+
+                        </div>
+
+
+
+
+
+
+                        <div class="control-box">
+
+
+                            <i class="bi bi-map-fill"></i>
+
+
+                            <h3>
+
+                                Treasure
+
+                            </h3>
+
+
+                            <p>
+
+                                Locked
+
+                            </p>
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="control-box">
+
+
+                            <i class="bi bi-cake2-fill"></i>
+
+
+                            <h3>
+
+                                Party
+
+                            </h3>
+
+
+                            <p>
+
+                                Ready
+
+                            </p>
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <div class="control-box">
+
+
+                            <i class="bi bi-stars"></i>
+
+
+                            <h3>
+
+                                Mission
+
+                            </h3>
+
+
+                            <p>
+
+                                Complete
+
+                            </p>
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+                    <div class="status-bar">
+
+
+                        <div class="status-fill"></div>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
 
 </section>
-<!-- P5-4 Project Showcase -->
-
-<section id="projects" class="container py-5 project-section">
-
-<h2 class="text-center mb-5">
-<i class="bi bi-folder2-open"></i>
-My Projects
-</h2>
-
-
-<div class="row g-4">
-
-
-<div class="col-md-4">
-
-<div class="project-card glass-card" style="background-color: var(--BDay-primary);">
-<i class="bi bi-code-slash" style="color: whitesmoke;"></i>
-
-<h3>
-Birthday Invitation
-</h3>
-
-<p>
-This Will Tell all About Games, Timing Click to Have a Brief look!
-</p>
-
-<a href="../Birthday Invitation/index.html"
-       class="btn btn-info small-project-btn">
-        <i class="bi bi-box-arrow-up-right"></i>
-        Open Birthday Project
-    </a>
-
-<span>HTML</span>
-<span>CSS</span>
-<span>Bootstrap</span>
-
-</div>
-
-</div>
 
 
 
-<div class="col-md-4">
 
-<div class="project-card glass-card">
 
-<i class="bi bi-heart-pulse"></i>
+<!--==================================================
+    Continue In H4-A
+==================================================-->
+<!--==================================================
+    Mission Guntaas 13
+    H4-A
+    Mission Rewards + Secret Events
+==================================================-->
 
-<h3>
-FitPro App
-</h3>
 
-<p>
-A fitness dashboard project with login system,
-charts, and exercise database.
-</p>
+<section class="rewards" id="rewards">
 
-<span>JavaScript</span>
-<span>Firebase</span>
-<span>Charts</span>
 
-</div>
-
-</div>
+    <div class="container">
 
 
 
-<div class="col-md-4">
-
-<div class="project-card glass-card">
-
-<i class="bi bi-stars"></i>
-
-<h3>
-Space Explorer
-</h3>
-
-<p>
-An interactive space project featuring planets,
-animations, and astronomy concepts.
-</p>
-
-<span>Space</span>
-<span>Animation</span>
-<span>UI Design</span>
-
-</div>
-
-</div>
 
 
-</div>
+        <!-- Section Header -->
+
+        <div class="section-title">
+
+
+            <h2>
+
+                Mission
+
+                <span>
+                    Rewards
+                </span>
+
+            </h2>
+
+
+            <p>
+
+                Every successful mission deserves
+                a special reward. Unlock memories,
+                surprises and birthday treasures.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Rewards Grid -->
+
+        <div class="rewards-grid">
+
+
+
+
+
+            <!-- Reward 1 -->
+
+            <div class="reward-card">
+
+
+                <div class="reward-icon">
+
+                    <i class="bi bi-trophy-fill"></i>
+
+                </div>
+
+
+
+                <h3>
+
+                    Mission Champion
+
+                </h3>
+
+
+
+                <p>
+
+                    Awarded to the team that
+                    completes the most challenges
+                    and finds the lost relic.
+
+                </p>
+
+
+            </div>
+
+
+
+
+
+
+
+            <!-- Reward 2 -->
+
+            <div class="reward-card">
+
+
+                <div class="reward-icon">
+
+                    <i class="bi bi-gift-fill"></i>
+
+                </div>
+
+
+
+                <h3>
+
+                    Secret Gift
+
+                </h3>
+
+
+
+                <p>
+
+                    A hidden surprise unlocked
+                    after completing the final
+                    birthday mission.
+
+                </p>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Reward 3 -->
+
+            <div class="reward-card">
+
+
+                <div class="reward-icon">
+
+                    <i class="bi bi-camera-fill"></i>
+
+                </div>
+
+
+
+                <h3>
+
+                    Memory Capsule
+
+                </h3>
+
+
+
+                <p>
+
+                    Capture special moments and
+                    store unforgettable birthday
+                    memories.
+
+                </p>
+
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- Secret Alert -->
+
+        <div class="alert-box">
+
+
+            <h3>
+
+                ⚠ Secret Mission Alert
+
+            </h3>
+
+
+
+            <p>
+
+                A hidden surprise is waiting.
+                Complete the adventure to reveal
+                the final birthday secret.
+
+            </p>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
 
 </section>
 
-<section id="contact" class="container py-5">
-
-<div class="glass-card contact-space">
-
-<div class="contact-title">
-
-<i class="bi bi-satellite-fill"></i>
-
-<h2>Mission Control</h2>
-
-<p>
-Connect with me and follow my journey of coding, music, and space exploration.
-</p>
-
-</div>
 
 
-<div class="social-grid">
 
 
-<a href="#" class="social-card">
-<i class="bi bi-github"></i>
-<span>GitHub</span>
-</a>
+<!--==================================================
+    Continue In H4-B
+==================================================-->
+<!--==================================================
+    Mission Guntaas 13
+    H4-B
+    Birthday Celebration + Cake Mission
+==================================================-->
 
 
-<a href="#" class="social-card">
-<i class="bi bi-linkedin"></i>
-<span>LinkedIn</span>
-</a>
+<section class="celebration-section" id="party">
 
 
-<a href="#" class="social-card">
-<i class="bi bi-envelope-fill"></i>
-<span>Email</span>
-</a>
+    <div class="container">
 
 
-<a href="#" class="social-card">
-<i class="bi bi-rocket-fill"></i>
-<span>Projects</span>
-</a>
 
 
-</div>
 
-</div>
+        <!-- Celebration Header -->
+
+        <div class="celebration-header">
+
+
+            <h2>
+
+                Final
+
+                <span>
+                    Celebration
+                </span>
+
+            </h2>
+
+
+
+            <p>
+
+                Mission complete! Now it is time
+                to celebrate, cut the cake and create
+                amazing birthday memories.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Party Cards -->
+
+        <div class="party-grid">
+
+
+
+
+
+            <!-- Cake -->
+
+            <div class="party-card">
+
+
+                <div class="party-icon">
+
+                    <i class="bi bi-cake2-fill"></i>
+
+                </div>
+
+
+
+                <h3>
+
+                    Cake Mission
+
+                </h3>
+
+
+
+                <p>
+
+                    The final celebration moment.
+                    Cake cutting begins after all
+                    missions are complete.
+
+                </p>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Music -->
+
+            <div class="party-card">
+
+
+                <div class="party-icon">
+
+                    <i class="bi bi-music-note-beamed"></i>
+
+                </div>
+
+
+
+                <h3>
+
+                    Celebration Music
+
+                </h3>
+
+
+
+                <p>
+
+                    Enjoy music, fun activities
+                    and a party atmosphere with
+                    friends and family.
+
+                </p>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Memories -->
+
+            <div class="party-card">
+
+
+                <div class="party-icon">
+
+                    <i class="bi bi-camera-fill"></i>
+
+                </div>
+
+
+
+                <h3>
+
+                    Memory Capture
+
+                </h3>
+
+
+
+                <p>
+
+                    Save the best moments of
+                    Mission Guntaas 13 forever.
+
+                </p>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- Cake Mission Box -->
+
+        <div class="cake-mission">
+
+
+            <div class="cake-icon">
+
+                🎂
+
+            </div>
+
+
+
+            <h2>
+
+                Mission Cake Unlocked
+
+            </h2>
+
+
+
+            <p>
+
+                The adventure is complete.
+                Celebrate the birthday commander
+                with a special cake moment.
+
+            </p>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Memory Cards -->
+
+        <div class="memory-grid">
+
+
+
+
+
+            <div class="memory-card">
+
+                <i class="bi bi-stars"></i>
+
+                <h3>
+
+                    Adventure
+
+                </h3>
+
+                <p>
+
+                    A journey full of fun missions.
+
+                </p>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="memory-card">
+
+                <i class="bi bi-people-fill"></i>
+
+                <h3>
+
+                    Friends
+
+                </h3>
+
+                <p>
+
+                    Memories created together.
+
+                </p>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="memory-card">
+
+                <i class="bi bi-heart-fill"></i>
+
+                <h3>
+
+                    Moments
+
+                </h3>
+
+                <p>
+
+                    A birthday to remember.
+
+                </p>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
 
 </section>
 
-<div class="mission-hud">
 
-    <div class="hud-item">
-        <i class="bi bi-cpu-fill"></i>
-        <span>System</span>
-        <strong>ONLINE</strong>
+
+
+
+<!--==================================================
+    Continue In H5-A
+==================================================-->
+<!--==================================================
+    Mission Guntaas 13
+    H5-A
+    Final Mission Ending
+==================================================-->
+
+
+<section class="final-mission">
+
+
+    <div class="container">
+
+
+
+        <div class="final-box">
+
+
+
+            <i class="bi bi-rocket-takeoff-fill"></i>
+
+
+
+
+            <h2>
+
+                Mission
+
+                <span>
+                    Complete
+                </span>
+
+            </h2>
+
+
+
+
+            <p>
+
+                Congratulations Commander Guntaas!
+                The birthday mission has been completed.
+                All adventures, challenges and memories
+                are now unlocked.
+
+            </p>
+
+
+
+
+            <a href="#home"
+               class="complete-btn">
+
+                <i class="bi bi-house-fill"></i>
+
+                Return To Base
+
+            </a>
+
+
+
+
+        </div>
+
+
+
+
     </div>
 
 
-    <div class="hud-item">
-        <i class="bi bi-globe2"></i>
-        <span>Location</span>
-        <strong>EARTH</strong>
+</section>
+
+
+
+
+
+
+
+<!--==================================================
+    H5-B
+    Footer + Final HTML Closing
+==================================================-->
+
+
+
+<footer class="footer">
+
+
+    <div class="container">
+
+
+
+        <div class="footer-logo">
+
+            Mission
+
+            <span>
+                Guntaas 13
+            </span>
+
+        </div>
+
+
+
+
+
+        <p>
+
+            🚀 A special birthday adventure
+            created with imagination, games
+            and unforgettable memories.
+
+        </p>
+
+
+
+
+
+
+
+        <div class="footer-icons">
+
+
+            <a href="#">
+
+                <i class="bi bi-cake2-fill"></i>
+
+            </a>
+
+
+
+            <a href="#">
+
+                <i class="bi bi-controller"></i>
+
+            </a>
+
+
+
+            <a href="#">
+
+                <i class="bi bi-stars"></i>
+
+            </a>
+
+
+        </div>
+
+
+
+
+
+
     </div>
-
-
-    <div class="hud-item">
-        <i class="bi bi-rocket-takeoff-fill"></i>
-        <span>Mission</span>
-        <strong>ACTIVE</strong>
-    </div>
-
-
-    <div class="hud-item">
-        <i class="bi bi-stars"></i>
-        <span>Status</span>
-        <strong>EXPLORING</strong>
-    </div>
-
-</div>
-
-<footer class="space-footer">
-
-
-<div class="footer-content">
-
-
-<h2>
-<i class="bi bi-stars"></i>
-Guntaas Singh
-</h2>
-
-
-<p>
-Dream • Code • Explore
-</p>
-
-
-<div class="footer-links">
-
-
-<a href="#about">
-<i class="bi bi-person"></i>
-About
-</a>
-
-
-<a href="#projects">
-<i class="bi bi-folder"></i>
-Projects
-</a>
-
-
-<a href="#journey">
-<i class="bi bi-rocket"></i>
-Journey
-</a>
-
-
-</div>
-
-
-
-<div class="footer-social">
-
-
-<i class="bi bi-github"></i>
-
-<i class="bi bi-code-slash"></i>
-
-<i class="bi bi-moon-stars"></i>
-
-
-</div>
-
-
-
-<p class="copyright">
-
-© 2026 My Personal Project |
-Made with ❤️ by Guntaas Singh
-
-</p>
-
-
-</div>
 
 
 </footer>
 
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 
-<div class="shooting-stars"></div>
+
+
+
+
+
+<!--==============================
+Back To Top Button
+==============================-->
+
+<a href="#home"
+   class="back-top">
+
+    <i class="bi bi-arrow-up"></i>
+
+</a>
+
+
+<!--==================================================
+    Secret Birthday Gift Event
+==================================================-->
+<!--=========================================
+    Secret Birthday Gift Popup
+=========================================-->
+
+<div id="gift-overlay">
+
+
+    <div id="gift-box">
+
+
+       <div class="gift-icon">
+          <i class="bi bi-gift-fill"></i>
+       </div>
+
+        <h2>
+
+            Secret Gift Found!
+
+        </h2>
+
+
+        <p>
+
+            Click the gift to unlock the surprise!
+
+        </p>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- Confetti Container -->
+
+<div id="confetti-container"></div>
+<!--==============================-->
+
+<script src="app.js"></script>
+
+
+<!-- Bootstrap JS -->
+
+<script> 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+
 </body>
+
+
 </html>
+
+
+<!--==================================================
+    Mission Guntaas 13
+    H5 Completed
+    index.html Completed
+==================================================-->
